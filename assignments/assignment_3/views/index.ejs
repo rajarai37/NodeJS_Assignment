@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body style="background-color:lightcoral;">
+
+<h2 style="text-align: center;">Dummy Users</h2>
+
+<table style="width:95%;margin: 10px;">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Age</th>
+    <th>City</th>
+    <th>Profession</th>
+  </tr>
+  <%users.forEach(user => { %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+      <td><%= user.age %></td>
+      <td><%= user.city %></td>
+      <td><%= user.profession %></td>
+    </tr>
+  <% })%>
+
+</table>
+
+<a href="/form">Add User</a>
+
+
+</body>
+</html>
+
