@@ -1,0 +1,17 @@
+header{
+    background-color:darkseagreen;
+    height: 75px;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    padding-left: 10px;
+}
+.true{
+    color: green;
+}
+.false{
+    color: red;
+}
+.null{
+    color: yellow;
+}
