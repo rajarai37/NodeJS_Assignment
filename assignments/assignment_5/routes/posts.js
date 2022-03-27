@@ -20,7 +20,8 @@ router.post("/posts", async (req, res) => {
         const post = await Post.create({
             name: req.body.name,
             body: req.body.body,
-            image: req.body.image
+            image: req.body.image,
+            user: req.user
         })
         return res.status(200).json({
             status: "Post created",
